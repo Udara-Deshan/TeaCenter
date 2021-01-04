@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="1080.0" prefWidth="1800.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="lk.Tea_Center.Controller.LineController">
+    <children>
+        <Label alignment="CENTER" layoutX="643.0" layoutY="39.0" prefHeight="0.0" prefWidth="480.0" text="Line">
+            <font>
+                <Font name="Baskerville Old Face" size="33.0"/>
+            </font>
+        </Label>
+        <JFXTextField fx:id="l_ID" editable="false" focusColor="#093bc3" labelFloat="true" layoutX="237.0"
+                      layoutY="183.0" prefHeight="44.0" prefWidth="266.0" promptText="LineID" unFocusColor="#170d0d">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <JFXTextField fx:id="name" focusColor="#093bc3" labelFloat="true" layoutX="679.0" layoutY="180.0"
+                      prefHeight="44.0" prefWidth="521.0" promptText="Name" unFocusColor="#170d0d">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <JFXTextField fx:id="profit" focusColor="#093bc3" labelFloat="true" layoutX="237.0" layoutY="281.0"
+                      prefHeight="44.0" prefWidth="266.0" promptText="Profit(per 100Kg)" unFocusColor="#170d0d">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <JFXButton id="save" layoutX="1507.0" layoutY="190.0" onAction="#btnAddLine" prefHeight="44.0" prefWidth="129.0"
+                   stylesheets="@../Stylesheet/SupplierAdd.css" text="Add Line">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </JFXButton>
+        <TableView fx:id="table" layoutX="178.0" layoutY="557.0" prefHeight="468.0" prefWidth="1426.0"
+                   style="-fx-font-size: 20;" tableMenuButtonVisible="true" AnchorPane.leftAnchor="175.0"
+                   AnchorPane.rightAnchor="175.0">
+            <columns>
+                <TableColumn fx:id="tableLID" prefWidth="344.6666564941406" text="Line ID"/>
+                <TableColumn fx:id="tableName" prefWidth="379.3333435058594" text="Name"/>
+                <TableColumn fx:id="tableProfit" prefWidth="344.0" text="Profit per 100Kg"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <JFXButton id="save" layoutX="1503.0" layoutY="254.0" onAction="#btnDelete" prefHeight="44.0" prefWidth="138.0"
+                   stylesheets="@../Stylesheet/SupplierAdd.css" text="Delete Line">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton id="save" layoutX="1507.0" layoutY="319.0" onAction="#btnCancel" prefHeight="44.0" prefWidth="135.0"
+                   stylesheets="@../Stylesheet/SupplierAdd.css" text="Cancel">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

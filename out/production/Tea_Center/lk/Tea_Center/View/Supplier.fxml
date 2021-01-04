@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="1080.0" prefWidth="1800.0" stylesheets="@../Stylesheet/SupplierAdd.css"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="lk.Tea_Center.Controller.SupplierController">
+    <children>
+        <JFXTextField fx:id="txtSid" editable="false" focusColor="#093bc3" labelFloat="true" layoutX="99.0"
+                      layoutY="172.0" prefHeight="44.0" prefWidth="266.0" promptText="Supplier ID"
+                      unFocusColor="#170d0d" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="172.0">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <JFXTextField fx:id="txtAddress" focusColor="#093bc3" labelFloat="true" layoutX="97.0" layoutY="262.0"
+                      prefHeight="44.0" prefWidth="764.0" promptText="Address" unFocusColor="#170d0d"
+                      AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="262.0">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <JFXTextField fx:id="txtTelephone" focusColor="#093bc3" labelFloat="true" layoutX="862.0" layoutY="262.0"
+                      prefHeight="28.0" prefWidth="315.0" promptText="Telephone" unFocusColor="#170d0d"
+                      AnchorPane.topAnchor="262.0">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <JFXComboBox id="lineNo" fx:id="cmbLineNo" labelFloat="true" layoutX="1228.0" layoutY="260.0" prefHeight="44.0"
+                     prefWidth="272.0" promptText="Line Number" unFocusColor="#170d0d" AnchorPane.leftAnchor="1228.0"
+                     AnchorPane.topAnchor="260.0"/>
+        <JFXTextField fx:id="txtName" focusColor="#093bc3" labelFloat="true" layoutX="366.0" layoutY="172.0"
+                      prefHeight="44.0" prefWidth="573.0" promptText="Name" styleClass="JFXTextField"
+                      unFocusColor="#170d0d" AnchorPane.topAnchor="172.0">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <Label alignment="CENTER" layoutX="633.0" layoutY="29.0" prefHeight="0.0" prefWidth="480.0" text="Supplier"
+               AnchorPane.topAnchor="39.0">
+            <font>
+                <Font name="Baskerville Old Face" size="33.0"/>
+            </font>
+        </Label>
+        <TableView fx:id="table" layoutX="210.0" layoutY="473.0" prefHeight="535.0" prefWidth="1693.0"
+                   style="-fx-font-size: 20;" tableMenuButtonVisible="true" AnchorPane.leftAnchor="55.0"
+                   AnchorPane.rightAnchor="52.0">
+            <columns>
+                <TableColumn fx:id="tableSID" prefWidth="134.9999542236328" text="Supplier ID"/>
+                <TableColumn fx:id="tableName" prefWidth="277.33331298828125" text="Name"/>
+                <TableColumn fx:id="tableAddress" prefWidth="349.66668701171875" text="Address"/>
+                <TableColumn fx:id="tableTelephone" prefWidth="219.00006103515625" text="Telephone"/>
+                <TableColumn fx:id="tableBrithDay" minWidth="0.0" prefWidth="201.99993896484375" text="Brith Day"
+                             visible="false"/>
+                <TableColumn fx:id="tableLineNo" prefWidth="108.66668701171875" text="Line No"/>
+                <TableColumn fx:id="tableBalance" minWidth="0.0" prefWidth="197.3333740234375" text="Balance"
+                             visible="false"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <JFXDatePicker fx:id="dtBrithDay" defaultColor="#0277bd" layoutX="1033.0" layoutY="175.0" prefHeight="44.0"
+                       prefWidth="284.0" promptText="Brith Day" style="-fx-Font-size: 20;"/>
+        <JFXButton id="save" layoutX="1593.0" layoutY="148.0" onAction="#btnSave" prefHeight="68.0" prefWidth="158.0"
+                   stylesheets="@../Stylesheet/SupplierAdd.css" text="Save">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <graphic>
+                <ImageView blendMode="OVERLAY" fitHeight="63.0" fitWidth="54.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8_save_100px.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton id="cancel" layoutX="1588.0" layoutY="234.0" onAction="#btnCancel" prefHeight="68.0"
+                   prefWidth="161.0" stylesheets="@../Stylesheet/SupplierAdd.css" text="Cancel">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <graphic>
+                <ImageView blendMode="OVERLAY" fitHeight="63.0" fitWidth="54.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8_cancel_100px.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton id="save" layoutX="1604.0" layoutY="312.0" onAction="#btnDelete" prefHeight="68.0" prefWidth="158.0"
+                   stylesheets="@../Stylesheet/SupplierAdd.css" text="Delete">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <graphic>
+                <ImageView blendMode="OVERLAY" fitHeight="63.0" fitWidth="54.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8_save_100px.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

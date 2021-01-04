@@ -1,0 +1,30 @@
+
+#lineNo{
+    -fx-font-size: 20px;
+}
+#Payment{
+    -fx-font-size: 20px;
+}
+#save{
+    -fx-background-radius: 8;
+
+}
+#delete{
+    -fx-background-radius: 8;
+}
+#cancel{
+    -fx-background-radius: 8;
+}
+
+#save:hover{
+    -fx-background-color: rgba(53, 205, 25, 0.88);
+}
+#delete:hover{
+    -fx-background-color: rgba(199, 29, 27, 0.87);
+}
+#cancel:hover{
+    -fx-background-color: rgba(30, 182, 194, 0.86);
+}
+.TextField{
+    -fx-text-fill: red;
+}

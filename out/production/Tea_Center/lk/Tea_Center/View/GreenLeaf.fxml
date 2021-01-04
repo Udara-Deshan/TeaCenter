@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="1080.0" prefWidth="1800.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="lk.Tea_Center.Controller.GreenLeafController">
+    <children>
+        <Label alignment="CENTER" layoutX="643.0" layoutY="39.0" prefHeight="0.0" prefWidth="480.0" text="Green Leaf">
+            <font>
+                <Font name="Baskerville Old Face" size="33.0"/>
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtSid" focusColor="#093bc3" labelFloat="true" layoutX="409.0" layoutY="180.0"
+                      prefHeight="44.0" prefWidth="266.0" promptText="Supplier ID" unFocusColor="#170d0d">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <TableView fx:id="tblTableTeaDetails" layoutX="48.0" layoutY="580.0" prefHeight="433.0" prefWidth="1664.0"
+                   style="-fx-font-size: 20;" tableMenuButtonVisible="true" AnchorPane.leftAnchor="48.0"
+                   AnchorPane.rightAnchor="62.0">
+            <columns>
+                <TableColumn fx:id="tblSID" prefWidth="75.0" text="Supplier ID"/>
+                <TableColumn fx:id="tblTeaAmount" prefWidth="75.0" text="Tea Amount(Kg)"/>
+                <TableColumn fx:id="tblGivenTime" prefWidth="75.0" text="Given Time"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <JFXTextField fx:id="txtTeaAmount" focusColor="#093bc3" labelFloat="true" layoutX="875.0" layoutY="282.0"
+                      prefHeight="44.0" prefWidth="266.0" promptText="Tea Amount(Kg)" unFocusColor="#170d0d">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+        <JFXDatePicker fx:id="dtAddDate" layoutX="877.0" layoutY="180.0" promptText="Date" style="-fx-Font-size: 20;"/>
+        <JFXButton id="save" layoutX="1432.0" layoutY="226.0" onAction="#btnAddTea" prefHeight="44.0" prefWidth="129.0"
+                   stylesheets="@../Stylesheet/SupplierAdd.css" text="Add">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton id="save" layoutX="1426.0" layoutY="290.0" onAction="#btnDeleteTea" prefHeight="44.0"
+                   prefWidth="138.0" stylesheets="@../Stylesheet/SupplierAdd.css" text="Delete ">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton id="save" layoutX="1428.0" layoutY="355.0" onAction="#btnCancelTea" prefHeight="44.0"
+                   prefWidth="135.0" stylesheets="@../Stylesheet/SupplierAdd.css" text="Cancel">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </JFXButton>
+        <JFXTextField fx:id="txtT_ID" editable="false" focusColor="#093bc3" labelFloat="true" layoutX="416.0"
+                      layoutY="282.0" prefHeight="44.0" prefWidth="266.0" promptText="T_ID" unFocusColor="#170d0d">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </JFXTextField>
+    </children>
+</AnchorPane>

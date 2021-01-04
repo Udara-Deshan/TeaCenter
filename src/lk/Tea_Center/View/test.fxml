@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="boderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0"
+            stylesheets="@../Stylesheet/dashBord.css" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="lk.Tea_Center.Controller.dashBordController">
+    <left>
+        <VBox alignment="CENTER" minHeight="800.0" minWidth="117.0" prefHeight="1080.0" prefWidth="123.0"
+              style="-fx-background-color: #0277BD;" BorderPane.alignment="CENTER">
+            <children>
+                <JFXButton id="dashbutn" fx:id="btnMonth" blendMode="SRC_ATOP" buttonType="RAISED" contentDisplay="TOP"
+                           onAction="#month" prefHeight="65.0" prefWidth="130.0" text="Month">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="93.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_schedule_240px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton id="dashbutn" fx:id="btnLine" blendMode="SRC_ATOP" buttonType="RAISED" contentDisplay="TOP"
+                           onAction="#line" prefHeight="65.0" prefWidth="130.0" text="Line">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="90.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_truck_100px_2.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton id="dashbutn" fx:id="btnSupplier" buttonType="RAISED" contentDisplay="TOP"
+                           onAction="#supplier" prefHeight="65.0" prefWidth="130.0" text="Supplier">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="90.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/supplier.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton id="dashbutn" fx:id="btnItems" buttonType="RAISED" contentDisplay="TOP" onAction="#items"
+                           prefHeight="65.0" prefWidth="130.0" text="Items">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="91.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_shopping_cart_80px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton id="dashbutn" fx:id="btnGreenLeaf" blendMode="SRC_ATOP" buttonType="RAISED"
+                           contentDisplay="TOP" onAction="#greenLeaf" prefHeight="119.0" prefWidth="130.0"
+                           text="Green Leaf">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="87.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_natural_food_100px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton id="dashbutn" fx:id="btnOrder" blendMode="SRC_ATOP" buttonType="RAISED" contentDisplay="TOP"
+                           onAction="#order" prefHeight="65.0" prefWidth="130.0" text="Order">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="93.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_get_cash_128px_1.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton id="dashbutn" fx:id="btnLoan" blendMode="SRC_ATOP" buttonType="RAISED" contentDisplay="TOP"
+                           onAction="#Loan" prefHeight="65.0" prefWidth="130.0" text="Reports">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="87.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/Reports.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton id="dashbutn" fx:id="btnLoan1" blendMode="SRC_ATOP" buttonType="RAISED" contentDisplay="TOP"
+                           onAction="#Loan" prefHeight="65.0" prefWidth="130.0" text="Reports">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="87.0" fitWidth="71.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/Reports.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton id="dashbutn" blendMode="SRC_ATOP" buttonType="RAISED" contentDisplay="TOP" onAction="#exit"
+                           prefHeight="65.0" prefWidth="130.0" text="Exit">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView blendMode="ADD" depthTest="ENABLE" fitHeight="68.0" fitWidth="63.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_exit_100px_2.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </JFXButton>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="1080.0" prefWidth="1800.0" style="-fx-background-color: #607D8B;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <ImageView blendMode="OVERLAY" fitHeight="540.0" fitWidth="663.0" layoutX="626.0" layoutY="304.0"
+                           pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="626.0"
+                           AnchorPane.rightAnchor="627.0">
+                    <image>
+                        <Image url="@../images/icons8_handshake_400px.png"/>
+                    </image>
+                </ImageView>
+                <Label blendMode="MULTIPLY" layoutX="677.0" layoutY="287.0" prefHeight="164.0" prefWidth="459.0"
+                       style="-fx-font-size: 100;" text="Wellcome" underline="true" wrapText="true"/>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

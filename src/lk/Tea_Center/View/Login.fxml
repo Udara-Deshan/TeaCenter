@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="logWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="433.0" prefWidth="925.0"
+            style="-fx-background-radius: 50; -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="lk.Tea_Center.Controller.LoginController">
+    <children>
+        <Pane blendMode="SRC_ATOP" layoutX="481.0" prefHeight="433.0" prefWidth="453.0"
+              style="-fx-background-color: #0277BD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="481.0"
+              AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <JFXButton buttonType="RAISED" cache="true" layoutX="54.0" layoutY="282.0" onAction="#cancel"
+                           prefHeight="44.0" prefWidth="99.0" ripplerFill="WHITE" text="Cancel" wrapText="true">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="20.0"/>
+                    </font>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="282.0" layoutY="282.0" onAction="#log" prefHeight="44.0"
+                           prefWidth="99.0" ripplerFill="WHITE" text="LogIn" textFill="#070707" wrapText="true">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="20.0"/>
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+        <ImageView blendMode="SRC_ATOP" fitHeight="448.0" fitWidth="536.0" layoutX="-3.0" pickOnBounds="true"
+                   AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="401.0"
+                   AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../images/Tea-tree.jpg"/>
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="userName" focusColor="#0834ff" labelFloat="true" layoutX="545.0" layoutY="84.0"
+                      prefHeight="44.0" prefWidth="373.0" promptText="User Name" style="-fx-prompt-text-fill: #000000;"
+                      unFocusColor="BLACK">
+            <font>
+                <Font name="MS Reference Sans Serif" size="20.0"/>
+            </font>
+        </JFXTextField>
+        <JFXPasswordField fx:id="password" focusColor="#0834ff" labelFloat="true" layoutX="546.0" layoutY="181.0"
+                          prefHeight="44.0" prefWidth="373.0" promptText="Password"
+                          style="-fx-prompt-text-fill: #000000;" unFocusColor="BLACK">
+            <font>
+                <Font name="MS Reference Sans Serif" size="20.0"/>
+            </font>
+        </JFXPasswordField>
+    </children>
+</AnchorPane>
